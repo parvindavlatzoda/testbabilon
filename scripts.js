@@ -31,6 +31,7 @@ var blockHidden = document.getElementById("hide-inputik");
 
 function showBlock() {
   blockHidden.classList.add("inputik-show");
+  blockHidden.style.display = "block";
 }
 function hideBlock() {
   blockHidden.style.display = "none";
