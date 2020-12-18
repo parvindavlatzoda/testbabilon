@@ -1,3 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#hide-inputik {
+  position: absolute;
+  display: none;
+}
+.inputik-show {
+  display: block;
+  animation: showBlock 1s linear forwards;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.foot {
+  background: aliceblue;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 4em 4em 2em 4em;
+}
+.foot-list {
+  text-decoration: none;
+  list-style: none;
+  text-align: end;
+}
+.foot-link {
+  display: inline-block !important;
+  margin-left: 1rem !important;
+  cursor: pointer;
+}
 .Ellipse {
   fill: none;
   stroke: #b7b7b7;
@@ -44,6 +84,10 @@
   border-radius: 50px 1px;
   width: 90%;
 }
+.strelki {
+  justify-content: space-between;
+  padding: 2em;
+}
 @media screen and (min-width: 1024px) {
   body {
     background: linear-gradient(90deg, #0d6efd 63%, transparent 34%);
@@ -66,9 +110,25 @@
     padding: 3em 6em;
     color: #ffffff;
   }
+  .strelki {
+    width: 30em;
+    justify-content: space-between;
+    padding: 2em;
+  }
 }
 @media screen and (max-width: 1024px) {
   .fon {
     visibility: hidden;
+    width: 0;
+  }
+  .strelki {
+    justify-content: space-between;
+    padding: 2em;
+  }
+}
+@media screen and (max-width: 1020px) {
+  #prev {
+    color: #0d6efd;
+    border-color: #0d6efd;
   }
 }
