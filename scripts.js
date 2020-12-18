@@ -10,11 +10,11 @@ const video = document.getElementById("videos");
 const onClickPrev = () => {
   if (current > 0) {
     current = current - 1;
-  } else current = 2;
+  } else current = arr.length - 1;
   changeLink();
 };
 const onClickNext = () => {
-  if (current < 2) {
+  if (current < arr.length - 1) {
     current = current + 1;
   } else current = 0;
   changeLink();
@@ -25,3 +25,15 @@ const changeLink = () => {
 
 nextButton.onclick = onClickNext;
 prevButton.onclick = onClickPrev;
+
+var btn = document.getElementById("lets");
+var blockHidden = document.getElementById("hide-inputik");
+
+function showBlock() {
+  blockHidden.classList.add("inputik-show");
+}
+function hideBlock() {
+  blockHidden.style.display = "none";
+}
+btn.addEventListener("click", showBlock);
+blockHidden.addEventListener("click", hideBlock);

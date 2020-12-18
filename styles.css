@@ -4,23 +4,6 @@ body {
   padding: 0;
   height: 100%;
 }
-#hide-inputik {
-  position: absolute;
-  display: none;
-}
-.inputik-show {
-  display: block;
-  animation: showBlock 1s linear forwards;
-}
-
-@keyframes showBlock {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .foot {
   background: aliceblue;
@@ -130,5 +113,28 @@ body {
   #prev {
     color: #0d6efd;
     border-color: #0d6efd;
+  }
+}
+.inputik {
+  position: absolute;
+  display: none;
+  top: 20%;
+  left: 30%;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+.inputik-show {
+  display: block;
+  animation: showBlock 1s linear forwards;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
