@@ -1,39 +1,74 @@
-/* .logo {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1440px;
-  height: 6865px;
-  z-index: 256;
+.Ellipse {
+  fill: none;
+  stroke: #b7b7b7;
+  stroke-width: 74px;
+  opacity: 0.1;
 }
-
-.MS {
-  font-size: 35px;
-  font-family: "Circular";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.143;
-  text-align: center;
-  top: 39.498px;
-}
-.Menu_bar {
-  position: absolute;
-  background-color: blue;
-  left: 0px;
-  top: 0px;
-  width: 1440px;
-
-  height: 3em;
-  z-index: 270;
-}
-.navbar {
-  list-style-type: none;
-  left: 3em;
-}
-.navbar a {
-  text-decoration: none;
-  color: black;
-}
-.navbar li {
+.carousel-indicators {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
   display: inline;
-} */
+  justify-content: right;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  list-style: none;
+}
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+}
+.carousel-inner {
+  padding: 3em;
+  color: #ffffff;
+}
+.carousel {
+  position: relative;
+}
+
+.btn-more {
+  background-color: #ffffff;
+  border-radius: 20em;
+  padding: 0.5em 2em;
+  color: #0d6efd;
+  font-weight: 500;
+}
+.video {
+  max-width: 31em;
+  /* border: 10px solid #101010;
+  border-radius: 35px 1px 35px 1px; */
+}
+.ratio > * {
+  border-radius: 50px 1px;
+  width: 90%;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background: linear-gradient(90deg, #0d6efd 63%, transparent 34%);
+  }
+  .bg-primary {
+    background-color: #f9f9f900 !important;
+  }
+  .main {
+    padding: 4em 2em;
+  }
+  .main-col {
+    padding-top: 3em;
+  }
+  .navbar {
+    /* padding-top: 1.5rem;
+    padding-bottom: ; */
+    padding: 1.5rem 1rem;
+  }
+  .carousel-inner {
+    padding: 3em 6em;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fon {
+    visibility: hidden;
+  }
+}
